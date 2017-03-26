@@ -1,0 +1,561 @@
+/*  fonts  */
+@font-face {
+	font-family: 'Conv_GothamRounded-Bold';
+	src: url('../fonts/GothamRounded-Bold.eot');
+	src: url('../fonts/GothamRounded-Bold.woff') format('woff'), url('../fonts/GothamRounded-Bold.ttf') format('truetype'), url('../fonts/GothamRounded-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_GothamRounded-Book';
+	src: url('../fonts/GothamRounded-Book.eot');
+	src: url('../fonts/GothamRounded-Book.woff') format('woff'), url('../fonts/GothamRounded-Book.ttf') format('truetype'), url('../fonts/GothamRounded-Book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_GothamRounded-Medium';
+	src: url('../fonts/GothamRounded-Medium.eot');
+	src: url('../fonts/GothamRounded-Medium.woff') format('woff'), url('../fonts/GothamRounded-Medium.ttf') format('truetype'), url('../fonts/GothamRounded-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*  CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body {
+  overflow-x: scroll;
+}
+
+/* header style */
+.page-wrap {
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  width: 1280px;
+  height: 3595px;
+}
+.page-header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 744px;
+  width: 1280px;
+  background-image: url('../img/page-header.png');
+  border-bottom: 1px solid #3a333c;
+}
+.page-navigation {
+  position: relative;
+}
+.page-navigation ul li {
+  position: absolute;
+  display: block;
+  font-size: 16px;
+  font-family: 'Conv_GothamRounded-Bold';
+  text-transform: uppercase;
+}
+.page-navigation a {
+  display: inline-block;
+  line-height: 25px;
+  text-decoration: none;
+  color: rgb( 255, 255, 255 );
+}
+.nav-photoapp {
+  letter-spacing: 2.5px;
+  left: 396px;
+  top: 66.7px;
+}
+.nav-home {
+  letter-spacing: 2.5px;
+  left: 272px;
+  top: 66.7px;
+}
+.nav-design {
+  letter-spacing: 2.5px;
+  left: 758px;
+  top: 66.5px;
+}
+.nav-download {
+  letter-spacing: 2.5px;
+  left: 912px;
+  top: 66.5px;
+}
+.nav-logo {
+  left: 607px;
+  top: 40px;
+}
+.page-slogan p {
+  position: absolute;
+  top: 337px;
+  left: 390px;
+  font-size: 36px;
+  font-family: 'Conv_GothamRounded-Bold';
+  color: rgb( 255, 255, 255 );
+  text-transform: uppercase;
+  letter-spacing: 5.408px; 
+}
+.page-sub-slogan p {
+  position: absolute;
+  left: 476px;
+  top: 386px;
+  font-size: 16px;
+  font-family: 'Conv_GothamRounded-Medium';
+  color: rgb( 255, 255, 255 );
+  letter-spacing: 2.4px; 
+}
+.page-header-button {
+  position: absolute;
+  left: 557px;
+  top: 428px; 
+  width: 166px;
+  height: 49px;
+  line-height: 50px;
+  border-radius: 3px;
+  background-color: rgb( 22, 160, 133 );
+  border: 0px;
+  font-family: 'Conv_GothamRounded-Bold';
+  font-size: 12px;
+  color: rgb( 255, 255, 255 );
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  padding-right: 2.5px;
+  cursor: pointer;
+}
+.twitter {
+  position: absolute;
+  top: 699px;
+  left: 591px;
+  width: 23px;
+  height: 20px;
+  background-image: url('../img/fa-twitter.png');
+}
+.flickr {
+  position: absolute;
+  top: 699px;
+  left: 630px;
+  width: 23px;
+  height: 20px;
+  background-image: url('../img/fa-flickr.png');
+}
+.dribbble {
+  position: absolute;
+  top: 699px;
+  left: 669px;
+  width: 20px;
+  height: 21px;
+  background-image: url('../img/fa-dribbble.png');
+}
+
+/* block2 style */
+.page-represent-block {
+  position: absolute;
+  left: 0px;
+  top: 745px;
+  height: 492px;
+  width: 1280px;
+  background-color: rgb( 245, 246, 247 );
+  background-image: url('../img/represent-block.png');
+  background-position: 440px 40px;
+  background-repeat: no-repeat;
+}
+.represent-block-wrap {
+  position: relative;
+  left: 128px;
+  top: 109px;
+  width: 450px;
+  margin-left: 0;
+}
+.represent-block-wrap h2 {
+  padding-left: 1px;
+  line-height: 21px;
+  font-size: 18px;
+  font-family: 'Conv_GothamRounded-Bold';
+  color: rgb( 22, 160, 133 );
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  white-space: pre-wrap;
+}
+.represent-block-wrap p {
+  padding: 40px 0px 40px;
+  font-size: 12px;
+  font-family: 'Conv_GothamRounded-Book';
+  font-weight: 100;
+  color: rgb( 55, 55, 55 );
+  line-height: 24px;
+  letter-spacing: 1.801px;
+  white-space: pre-wrap;
+}
+span {
+  font-family: 'Conv_GothamRounded-Book';
+  font-weight: bold;
+  letter-spacing: 1.92px;
+}
+.represent-block-button {
+  position: absolute;
+  width: 192px;
+  height: 51px;
+  margin-left: 1px;
+  border-radius: 3px;
+  background-color: rgb( 22, 160, 133 );
+  border: 0px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Conv_GothamRounded-Bold';
+  font-size: 12px;
+  color: rgb( 255, 255, 255 );
+  letter-spacing: 1.83px;
+  padding-right: 5.5px;
+  line-height: 53px;
+}
+
+/* block3 style */
+.page-design-block {
+  position: absolute;
+  left: 0px;
+  top: 1237px;
+  width: 1280px;
+  height: 558px;
+  background-color: rgb( 255, 255, 255 );
+  background-image: url('../img/design-block.png');
+  background-repeat: no-repeat;
+  background-position: 32px 142px;
+}
+.design-page-wrap {
+  position: relative;
+  left: 766px;
+  top: 143px;
+}
+.design-page-wrap h2 {
+  line-height: 20px;
+  font-size: 18px;
+  font-family: 'Conv_GothamRounded-Medium';
+  font-weight: 600;
+  color: rgb( 22, 160, 133 );
+  text-transform: uppercase;
+  letter-spacing: 2.7px;
+  white-space: pre-wrap;
+}
+.design-page-wrap p {
+  padding: 36px 0 36px 3px;
+  font-size: 12px;
+  font-family: 'Conv_GothamRounded-Book';
+  font-weight: 300;
+  color: rgb( 55, 55, 55 );
+  line-height: 22px;
+  letter-spacing: 1.801px;
+  white-space: pre-wrap;
+}
+.design-block-button {
+  position: absolute;
+  width: 192px;
+  height: 51px;
+  background-color: rgb( 22, 160, 133 );
+  border: 0px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Conv_GothamRounded-Bold';
+  font-size: 12px;
+  color: rgb( 255, 255, 255 );
+  letter-spacing: 1.9px;
+  margin-left: 1px;
+  padding-right: 8px;
+  line-height: 50px;
+}
+.page-design-bar {
+  position: relative;
+  top: 239px;
+  left: 767px; 
+  margin-bottom: 55px;
+  font-family: 'Conv_GothamRounded-Bold';
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: rgb( 55, 55, 55 );
+}
+.page-design-bar div {
+  margin-top: 7px;
+}
+.page-design-bar a {
+  margin-right: 16px;
+}
+
+/* block4 style */
+.page-community-block {
+  position: absolute;
+  left: 0px;
+  top: 1795px;
+  width: 1280px;
+  height: 484px;
+  background-color: rgb( 245, 246, 247 );
+}
+.community-bar {
+  position: relative;
+  top: 95px;
+  left: 1113px;
+}
+.community-bar a {
+  margin-right: 12px;
+}
+.community-gallery {
+  position: relative;
+  margin: 102px 128px 0;
+}
+.gallery-block01 {
+  position: absolute;
+  width: 190px;
+}
+.gallery-block01 img{
+  position: absolute;
+  top: 44px;
+  left: 59px;
+}
+.gallery-block01 h2 {
+  position: absolute;
+  top: 129px;
+  left: 1px;
+  font-family: 'Conv_GothamRounded-Bold';
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2.3px;
+}
+.gallery-block01 p {
+  position: absolute;
+  top: 165px;
+  left: 19px;
+  font-size: 10px;
+  color: rgb( 55, 55, 55 );
+  font-family: 'Conv_GothamRounded-Medium';
+  color: rgb( 55, 55, 55 );
+  text-align: center;
+  letter-spacing: 1.54px;
+  line-height: 12px;
+  white-space: pre-wrap;
+}
+.gallery-block02 {
+  position: absolute;
+  top: 0px;
+  right: 396px;
+}
+.gallery-block03 {
+  position: absolute;
+  margin-right: 1px;
+  right: 0px;
+  top: 0px;
+}
+
+/* block5 style */
+.page-contact-block {
+  position: relative;
+  left: 0px;
+  top: 2279px;
+  width: 1280px;
+  height: 790px;
+  background-image: url('../img/contact-block.png');
+}
+.page-contact-block h2{ 
+  left: 403px;
+  top: 349px;
+  position: absolute;
+  font-size: 24px;
+  font-family: 'Conv_GothamRounded-Bold';
+  color: rgb( 255, 255, 255 );
+  text-transform: uppercase;
+  letter-spacing: 3.60099px;
+}
+input[type=email] {
+  position: absolute;
+  top: 404px;
+  left: 467px;
+  width: 258px;
+  height: 58px;
+  border-radius: 3px 0 0 3px;
+  border: 0px;
+  font-size: 16px;
+  font-family: 'Conv_GothamRounded-Medium';
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgb( 55, 55, 55 );
+  letter-spacing: 2.37px;
+  padding-left: 22px;
+}
+input[type=button] {
+  position: absolute;
+  top: 404px;
+  left: 747px;
+  height: 60px;
+  width: 63px;
+  background-color: rgb( 22, 160, 133 );
+  border: 0px;
+  border-radius: 0px 3px 3px 0;
+  background-image: url('../img/contact-block-button.png');
+  background-position: 23px 24px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/* block6 style */
+.page-download-block {
+  position: absolute;
+  top: 3068px;
+  width: 1280px;
+  height: 396px;
+  background-color: rgb( 245, 246, 247 );
+}
+.download-block-wrap {
+  position: absolute;
+  margin: 0 191px;
+  width: 896px;
+  top: 118px;
+}
+.page-download-block h2 {
+  position: absolute;
+  top: 89px;
+  left: 547px;
+  font-size: 20px;
+  font-family: 'Conv_GothamRounded-Bold';
+  color: rgb( 55, 55, 55 );
+  text-transform: uppercase;
+  letter-spacing: 2.95px;
+}
+.download-block-wrap p {
+  margin: -1px 0 0 2.5px ;
+  white-space: pre-wrap;
+  text-align: center;
+  font-family: 'Conv_GothamRounded-Medium';
+  color: rgb( 55, 55, 55 );
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  line-height: 22px;
+}
+.download-block-button {
+  position: absolute;
+  top: 224px;
+  width: 296px;
+  height: 56px;
+  border: 0;
+  border-radius: 3px;
+  background-color: rgb( 26, 188, 156 );
+  background-position: 240px 0px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Conv_GothamRounded-Bold';
+  font-size: 16px;
+  color: rgb( 255, 255, 255 );
+  letter-spacing: 1.9px;
+  text-align: left;
+}
+.apple-store {
+  padding-top: 5px;
+  padding-left: 24px;
+  left: 330px;
+  background-image: url('../img/apple.png');
+  letter-spacing: 2.5px;
+}
+.play-store {
+  left: 652px;
+  background-image: url('../img/android.png');
+  font-size: 17.2px;
+  padding-left: 31px;
+  letter-spacing: 3.15px;
+}
+
+/* block7 style */
+.page-footer-block {
+  position: absolute;
+  top: 3460px;
+  width: 1280px;
+  background-image: url('../img/Livello2.png');
+  background-position: 1098px 42px;
+  background-repeat: no-repeat;
+}
+.footer-nav {
+ width: 1154px; 
+}
+.page-footer-block ul {
+  position: relative;
+  width: 1154px;
+  left: 126px;
+  padding-top: 48px;
+}
+.page-footer-block p {
+  position: relative;
+   width: 1154px;
+  left: 126px;
+}
+.page-footer-block ul li {
+  display: inline-block;
+  padding-right: 8px;
+  padding-left: 6px;
+  border-right: 2px solid rgb( 22, 160, 133 );
+  height: 14px;
+}
+.page-footer-block ul li:first-child {
+  padding-left: 0px;
+}
+.page-footer-block ul li:last-child {
+  border-right: 0px;
+  padding-left: 7px;
+}
+.page-footer-block a {
+  line-height: 14px;
+  font-size: 14px;
+  font-family: 'Conv_GothamRounded-Bold';
+  text-transform: uppercase;
+  color: rgb( 55, 55, 55 );
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+.page-footer-block p {
+  padding-top: 21px;
+  font-size: 14px;
+  font-family: 'Conv_GothamRounded-Bold';
+  color: rgb( 55, 55, 55 );
+  letter-spacing: 2.1px;
+}
